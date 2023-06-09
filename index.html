@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drink Order Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Drink Order Form</h1>
+<form action="" id="order-form">
+    <div>
+      <label for="size">Size:</label>
+      <select id="size" onchange="update_current_drink();fav_check();">
+        <option value="2.50" selected>Small (£2.50)</option>
+        <option value="3.00">Medium (£3.00)</option>
+        <option value="3.55">Large (£3.55)</option>
+        <option value="4.20">Extra Large (£4.20)</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="type">Type:</label>
+      <select id="type" onchange = "selectType()">
+        <option value="" selected disabled hidden>Please Select One</option>
+        <option value="smoothie">Smoothie</option>
+        <option value="milkshake">Milkshake</option>
+      </select>
+    </div>
+    <div>
+      <label for="base">Base:</label>
+      <select id="base-drop"></select>
+    </div>
+
+    <div>
+      <label for="ingredients">Ingredients:</label>
+      <div id="ingredients-checkboxes"></div>
+    </div>
+
+   
+
+    <div id="extras">
+      <label>Extras:</label>
+      <div id="extras-checkboxes"></div>
+    </div>
+  </form>
+    <div>
+      <button id="add-drink" onclick="calculateCost()">Add Drink to Order</button>
+    </div>
+
+    <div id = "test">
+
+    </div>
+
+    <div>
+      <label for="current-cost">Current Drink Cost:</label>
+      <span id="current-cost">£2.50</span>
+    </div>
+
+    <div>
+      <label>Current Order:</label>
+      <ul id="current-order"></ul>
+      <div>
+        <label for="total-cost">Total Cost:</label>
+        <span id="total-cost">£0.00</span>
+      </div>
+    </div>
+
+    <div><button id="order" onclick="placeOrder()">Place Order</button></div><br><br>
+
+    <div>
+      <button id="save-favourite" onclick="addfav()" disabled>Save My Favourite</button>
+      <button id="order-favourite" disabled onclick="order_fav()">Order My Favourite</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>

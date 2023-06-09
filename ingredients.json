@@ -1,0 +1,82 @@
+{
+  "smoothie_bases": [
+    {
+      "name": "Apple Juice",
+      "price": 0
+    },
+    {
+      "name": "Orange Juice",
+      "price": 0
+    }
+  ],
+  "milkshake_bases": [
+    {
+      "name": "Whole Milk",
+      "price": 0
+    },
+    {
+      "name": "Semi-Skimmed Milk",
+      "price": 0
+    },
+    {
+      "name": "Skimmed Milk",
+      "price": 0
+    },
+    {
+      "name": "Soya Milk",
+      "price": 0.5
+    },
+    {
+      "name": "Oat Milk",
+      "price": 0.5
+    }
+  ],
+  "ingredients": [
+    {
+      "name": "Banana",
+      "price": 0.5
+    },
+    {
+      "name": "Mango",
+      "price": 0.5
+    },
+    {
+      "name": "Raspberries",
+      "price": 0.5
+    },
+    {
+      "name": "Cherries",
+      "price": 0.5
+    },
+    {
+      "name": "Passion Fruit",
+      "price": 0.5
+    },
+    {
+      "name": "Chocolate",
+      "price": 0.5
+    }
+  ],
+  "extras": [
+    {
+      "name": "Malt",
+      "price": 0.75
+    },
+    {
+      "name": "Marshmallows",
+      "price": 0.75
+    },
+    {
+      "name": "Whipped Cream",
+      "price": 0.75
+    },
+    {
+      "name": "Baileys",
+      "price": 0.75
+    },
+    {
+      "name": "A Flake",
+      "price": 0.75
+    }
+  ]
+}

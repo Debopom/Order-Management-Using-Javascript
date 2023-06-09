@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch JSON and Add Options</title>
+</head>
+<body>
+    <select id="optionsDropdown"></select>
+    <div id = "test"></div>
+    <script>
+        // Fetch the JSON data
+        fetch('ingredients.json')
+            .then(response => response.json())
+            .then(data => {
+                // Access the select dropdown element
+                const usersArray = data.milkshake_bases;
+                const selectDropdown = document.getElementById('optionsDropdown');
+                var test = document.getElementById('test');
+                test.textContent = JSON.stringify(usersArray);
+
+                // Add options to the select dropdown
+                usersArray.forEach(option => {
+                    const optionElement = document.createElement('option');
+                    optionElement.value = option.price;
+                    optionElement.textContent = option.name;
+                    selectDropdown.appendChild(optionElement);
+                });
+            });
+    </script>
+</body>
+</html>
